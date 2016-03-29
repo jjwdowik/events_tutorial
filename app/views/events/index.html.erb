@@ -6,6 +6,10 @@
 			<strong><%= event.name %></strong>
 			in <%= event.location %>: 
 			<%= number_to_currency(event.price) %>
+			<br />
+			About: <%= event.description %>
+			<br />
+			When it starts: <%= event.starts_at %>
 		</li>
 	<% end %>
 </ul>
