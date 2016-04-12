@@ -1,0 +1,12 @@
+<strong><%= @event.name %></strong>
+in <%= @event.location %>: 
+
+<%= format_price(@event) %>
+<br />
+About: <%= truncate(@event.description, length: 15) %>
+<br />
+When it starts: <%= format_date(@event) %>
+
+
+
+<%= link_to "ALl Events", events_path %>
